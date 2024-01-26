@@ -1,38 +1,129 @@
+body {
+    background-color: beige;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AppAC {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Category {
+    margin: 0px 20px 20px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.AppCartAndDishes{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+.ACHeader {
+    font-size: 22px;
+    color: #202020
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.categoryButtonSelected {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: solid 0.5px aliceblue;
+    background-color: #80c3ff;
+    font-size: 20px;
+    color: aliceblue;
 }
+
+.categoryButton {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: solid 0.5px #80c3ff;
+    background-color: aliceblue;
+    font-size: 16px;
+    color: #80c3ff;
+    cursor: pointer;
+}
+
+.categoryButton:hover {
+    background-color: #80c3ff;
+    color: aliceblue;  
+}
+
+.Cart {
+    padding: 30px 40px;
+    background-color:#f5f5dc;
+    border-radius: 10px;
+    border: 1.5px solid #ddddac;
+}
+
+.dishImage {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.dishName, .dishPrice {
+    font-size: 24px;
+    color: #202020;
+}
+
+.regulateQuantityAndTheBtn {
+    display: flex;
+    flex-direction: column;
+}
+
+.regulateQuantity {
+    display: flex;
+    margin: 0;
+}
+
+.dishQuantityToAddToCart {
+    margin: 0px 20px;
+    align-self: center;
+}
+
+.divAddToCartBtn {
+    margin: 20px 0px;
+}
+
+.addToCartBtn {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: solid 0.5px #69dab6;
+    background-color: #d3f2e8;
+    font-size: 20px;
+    color: #69dab6;
+    cursor: pointer;
+}
+
+.addToCartBtn:hover {
+    background-color: #69dab6;
+    color: #d3f2e8;
+}
+
+.decreaseQuantity, .increaseQuantity {
+    background-color: aliceblue;
+    padding: 14px 16px;
+    margin: 0;
+    border-radius: 10px;
+    border: solid 0.5px #80c3ff;
+    color: #80c3ff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.decreaseQuantity:hover, .increaseQuantity:hover {
+    background-color: #80c3ff;
+    color: aliceblue;
+}
+
+.dishQuantityToAddToCart {
+    font-size: 20px;
+    color: #202020;
+}
+
