@@ -6,8 +6,6 @@ import dishesSlice from "../slices/dishesSlice";
 
 export const store = configureStore({
     reducer: {
-        //dishes,
-        //cart
         dishes: dishesSlice,
         cart: cartSlice, 
     },
