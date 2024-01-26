@@ -17,7 +17,7 @@ const Dish = ({dish}) => {
                 <p className="dishName">
                     {dish.name}
                 </p>
-                <p className="dishPrice">
+                <p className="dishInListPrice">
                     $ {dish.price}
                 </p>
             </div>

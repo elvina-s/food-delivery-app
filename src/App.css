@@ -66,8 +66,14 @@ body {
     border-radius: 10px;
 }
 
-.dishName, .dishPrice {
+.dishName {
     font-size: 24px;
+    color: #202020;
+}
+
+.dishInListPrice {
+    font-size: 22px;
+    font-weight: bold;
     color: #202020;
 }
 
@@ -127,3 +133,30 @@ body {
     color: #202020;
 }
 
+.totalPrice {
+    font-size: 22px;
+    font-weight: bold;
+    color: #202020;
+}
+
+.dishName, .dishPortions, .dishPrice {
+    font-size: 20px;
+    color: #202020;
+}
+
+.deleteBtn {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: solid 0.5px #ff4322;
+    background-color: #ffe3de;
+    font-size: 20px;
+    color: #ff4322;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    border: solid 0.5px #ffe3de;
+    background-color: #ff4322;
+    font-size: 20px;
+    color: #ffe3de; 
+}

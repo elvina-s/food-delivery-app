@@ -7,10 +7,11 @@ const CartItem = ({cartItem}) => {
     const dispatch = useDispatch();
     return(
         <div className="CartItem">
-            <p>{dishes.name}</p>
-            <p>{cartItem.quantity} portion(-s)</p>
-            <p>Price: $ {dishes.price * cartItem.quantity}</p>
+            <p className="dishName">{dishes.name}</p>
+            <p className="dishPortions">{cartItem.quantity} portion(-s)</p>
+            <p className="dishPrice">Price: $ {dishes.price * cartItem.quantity}</p>
             <button
+            className="deleteBtn"
             onClick={() => dispatch(deleteFromCart({cartItemId: cartItem.id}))}>
                 Delete
             </button>
